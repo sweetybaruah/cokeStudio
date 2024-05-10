@@ -1,0 +1,152 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid rgb(30, 84, 164);
+}
+
+.ppa_hidden{
+    display: none;
+}
+
+
+
+.slide1 {
+    position: absolute;
+    height: 81vh;
+    width: 105vw;
+    top: 57px;
+    overflow: hidden;
+    border: 2px solid hotpink;
+}
+
+
+.bg {
+    position: absolute;
+    height: 81vh;
+    width: 105vw;
+    top:600px;
+    z-index: -1;
+    opacity: 0;
+   
+}
+
+.flyInFromBottom{
+    animation: flyInFromBottom 1s ease forwards;
+}
+
+@keyframes flyInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.cokelogo {
+    position: absolute;
+    bottom: calc(19vh + 309px); 
+    right: 64vw;
+    width: auto;
+    height: 161px;
+}
+.glitch {
+    position: absolute;
+    bottom: calc(19vh + 309px); 
+    right: 64vw;
+    width: auto;
+    height: 161px;
+    opacity: 0;
+}
+.soundbox {
+    position: absolute;
+    bottom: 19vh;
+    right: 55vw;
+    width: auto;
+    height: 326px;
+}
+
+.l_effects, .m_effects, .r_effects {
+    position: absolute;
+    bottom: calc(19vh + 0%);
+    right: calc(55vw + -1%);
+    width: auto;
+    height: auto;
+    display: inline-block;
+    opacity: 0;
+}
+
+.l_effects {
+    transform: translate(-306%, -19%);
+}
+
+.m_effects {
+    transform: translateX(-54%);
+}
+
+.r_effects {
+    transform: translate(-11%, -12%);
+}
+
+.guitarL {
+    position: absolute;
+    bottom: 19vh;
+    right: 131px; 
+    width: auto;
+    height: 326px;
+}
+
+.bip {
+    position: absolute;
+    bottom: calc(19vh + 8%);
+    right: 434px; 
+    width: auto;
+    height: 14px;
+    display: inline-block;
+}
+
+
+
+.wire {
+    position: absolute;
+    bottom: 3vh;
+    right: calc(131px - -26%); 
+    width: auto;
+    height: 326px;
+}
+
+.video-wrapper {
+    width: 78%;
+    height: 100vh;
+    left: 10%;
+    top: 5vh;
+    position: relative;
+}
+
+
+.closebtn {
+    position: absolute;
+    bottom: calc(19vh + 71%);
+    right: 167px; 
+    width: auto;
+    height: 27px;
+    
+}
+
+
+
+
+.pulse{
+    animation: pluse 1s ease-in-out infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
